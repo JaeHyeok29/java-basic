@@ -18,6 +18,11 @@
   - defintion, declaration, initialization[^2]을 한 글월로 연결 지어 설명합니다.
 - 모든 변수의 [default value][datatypes]가 찍히도록 코드를 고칩니다. 무엇을 바로 잡았습니까?
 
+## 연습
+
+- System.out.format(...)(또는 System.out.printf(...)): [TestFormat](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)
+- java.lang.Math.*: [BasicMathDemo](https://docs.oracle.com/javase/tutorial/java/data/beyondmath.html)
+
 ### Convention
 
 - 변수 이름은 camel-case syntax를 따릅니다.
