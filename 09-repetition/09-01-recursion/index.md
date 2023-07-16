@@ -86,6 +86,9 @@ Last-In-First-Out(LIFO)으로 연산의 기억을 쌓고(push) 꺼내기(pop) �
 Recursion은 call stack을 써서 같은 계산을 되풀이합니다.
 Recurive method가 (recursive  procedure가) 만드는 recursive process가 어떤 모양[^linear]으로 자라나는지 그려보는 것은 프로그램을 읽고 이해하는 힘을 기르는 데 큰 도움이 됩니다.
 
+> **note:**
+- call stack (of activation records), lexical scoping, substition, evaluation, evironment를 조금 더 깊이 알고 싶다면 [closure](../09-01-sidetrip-closure/)를 공부합니다.
+
 ---
 
 $n$ 번째 Fibonacci 수 $\{F_n\}$는

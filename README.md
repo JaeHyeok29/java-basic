@@ -10,9 +10,9 @@
 
 6.092 | 노트 | 다른 자료
 ---------|----------|---------
- [Types, Variables, Operators][6-092-01] | 01 ~ 05, 07 | -
- [More types, methods, conditionals][6-092-02] | 06 ~ 08, 10 | -
- [Loops and arrays][6-092-03] | 03,09 | -
+ [Types, Variables, Operators][6-092-01] | 01 ~ 05, 07, 09(closure) | -
+ [More types, methods, conditionals][6-092-02] | 06 ~ 08, 09(switch), 10 | -
+ [Loops and arrays][6-092-03] | 03, 09 | -
  [Objects and classes][6-092-04] | - | -
  [Access control, class scope, packages, Java API][6-092-05] | - | -
  [Design, debugging, interfaces][6-092-06] | - | -
