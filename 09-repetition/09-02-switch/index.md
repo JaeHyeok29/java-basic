@@ -25,6 +25,6 @@ TODO:
 # 연습
 
 - Mathx.binomialCoefficient(int n, int k)의 recursion 판에서 if statement 대신에 switch를 쓰도록 고치세요.
-- 년과 월 두 숫자를 받아 월의 날짜 수를 구하는 프로그램[^SwtchDemo2]을 짭니다. **switch** 쓰고 fall-through하도록 짭니다. (윤년 따지는 문제)
+- 년과 월 두 숫자를 받아 월의 날짜 수를 구하는 프로그램[^SwitchDemo2]을 짭니다. switch 쓰고 fall-through하도록 짭니다. (윤년 따지는 문제)
 
 [^SwitchDemo2]: https://docs.oracle.com/javase/tutorial/displayCode.html?code=https://docs.oracle.com/javase/tutorial/java/nutsandbolts/examples/SwitchDemo2.java
