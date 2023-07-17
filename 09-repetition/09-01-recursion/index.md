@@ -18,11 +18,11 @@ public class Mathx {
 }
 ```
 
-TestMathx.testFactorial에서 Mathx.factorial(10)을 돌려보면
+MathxTest.testFactorial에서 Mathx.factorial(10)을 돌려보면
 
 ```console
-# cr TestMathx = javac TestMathx.java && java TestMathx
-$ javac Mathx.java && cr TestMathx 2>&1 | more
+# cr MathxTest = javac MathxTest.java && java MathxTest
+$ javac Mathx.java && cr MathxTest 2>&1 | more
 Exception in thread "main" java.lang.StackOverflowError
         at Mathx.factorial(Mathx.java:5)
         at Mathx.factorial(Mathx.java:5)
@@ -51,7 +51,7 @@ public class Mathx {
 ```
 
 ```console
-$ javac Mathx.java && java TestMathx
+$ javac Mathx.java && java MathxTest
 3628800
 ```
 
@@ -59,10 +59,30 @@ $n!$의 계산을 더 작은 두 가지 계산으로 나누어 푸는 것을 눈
  - $n!$의 정의에서 $n=0$인 경우를 base case, $n \gt 1$인 경우를 inductive case(또는 recursive case)라고 합니다.
  - $n!$을 계산하는 문제의 크기는 n의 크기와 같습니다.
     - $n=0$ 곧 문제의 크기가 가장 작을 때, 문제는 곧바로 풀려서 계산 결과가 1로 떨어집니다. 더 남은 계산은 없습니다.
-    - $n \gt 0$ 곧 문제가 크기가 그보다 클 때는, 문제의 크기를 줄이면서 n이 끝내 base case에 다다를 때까지 같은 계산을 되풀이합니다.
+    - $n \gt 0$ 곧 문제의 크기가 그보다 클 때는, 문제의 크기를 줄이면서 n이 끝내 base case에 다다를 때까지 같은 계산을 되풀이합니다.
     - 이런 문제 풀이 방식을 recursion이라고 합니다.
 
 Recursion은 되풀이(반복, repetition) 계산을 표현하는 방법 가운데 하나입니다. 복잡하고 어려운 문제를 더 단순하고 쉬운 문제로 나누어 푸는 데 (divide-and-conquer) 도움이 됩니다. Recursion으로 설계한 계산 방식은 induction(수학 귀납법, mathematical induction)으로 증명할 수 있습니다.
+
+#### 연습
+
+Recursion 방식으로 푼 문제는 induction으로 증명하듯이 test code를 정리할 수 있습니다. 이렇게 하려면  FactorialTest class가 test를 도맡습니다.
+
+```java
+public class MathxTest {
+    public static void main(String[] args) {
+        // ...
+        MathxTest.testFactorial();
+        // ...
+    }
+
+    private static void testFactorial() {
+        TestFactorial.testBaseCase();
+        TestFactorial.testInductiveCase();
+    }
+    // ....
+}
+```
 
 ### Recursive Process
 
@@ -91,7 +111,7 @@ Recurive method가 (recursive  procedure가) 만드는 recursive process가 어�
 
 ---
 
-$n$ 번째 Fibonacci 수 $\{F_n\}$는
+$n$ 번째 Fibonacci 수($F_n$)는
 
 $$
 F_n =
@@ -138,7 +158,7 @@ factorial(0) = 1
 ```
 
 - [파스칼 삼각형](https://ko.wikipedia.org/wiki/파스칼의_삼각형)에서 n 번째 줄의 k 번째 값을 (이항 계수를) 구하는 Mathx.binomialCoefficient(int n, int k)[^binomialcoefficient]를 만듭니다.
-    - TestMathx.testBinomialCoefficient()에서 실험하고 검사하는 코드를 씁니다.
+    - BinomialCoefficientTest class에서 실험하고 검사하는 코드를 씁니다.
     - [Recurrence relation (recurrence fomula)](https://math.stackexchange.com/questions/2001859/find-a-binomial-term-general-formula-for-recurrence-relation) 그대로를 recursion으로 구현합니다.
     - Mathx.factorial만 써서 구현합니다. 이렇게 만들면 recursion으로 계산을 되풀이한다고 할 수 있나요?
 
