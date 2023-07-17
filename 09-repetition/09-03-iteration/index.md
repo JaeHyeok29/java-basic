@@ -13,7 +13,7 @@
 
 ### factorial
 
-- iterative defintion
+- iterative definition
 
 $$
 n! =
@@ -27,7 +27,7 @@ $$
 
 ```java
 //Test first
-public class TestFactorial {
+public class FactorialTest {
 
     public static void testBaseCase() {
         assert Mathx.factorial(0) == 1;
@@ -62,14 +62,14 @@ public class Mathx {
 - counter를 쓰지 않고 n 값을 줄이면서 loop를 도는 코드와 비교해 봅니다.
 
 ```java
-public class TestMathx {
+public class MathxTest {
     public static void main(String[] args) {
-        TestMathx.testFactorial();
+        MathxTest.testFactorial();
     }
 
     private static void testFactorial() {
-        TestFactorial.testBaseCase();
-        TestFactorial.testInductiveCase();
+        FactorialTest.testBaseCase();
+        FactorialTest.testInductiveCase();
     }
 
     // ...
@@ -97,13 +97,13 @@ public class TestMathx {
 
 ### Debugging
 
-- TestMathx를 통과하도록 Bug을 잡습니다.
+- MathxTest를 통과하도록 Bug을 잡습니다.
 
 ### Fibonacci
 
-- TestFibonacci를 만듭니다.
+- FibonacciTest를 만듭니다.
 - Mathx.fibonacci의 type signature를 (Dummy) 구현합니다.
-- TestMathx.testFibonacci를 만들고 test합니다.
+- MathxTest.testFibonacci를 만들고 test합니다.
 - Mathx.fibonacci의 iterative version을 만듭니다. 정의대로 계산하는 과정을 펼쳐보면 앞 단계에서 계산한 값을 어떻게 뒷 단계로 옮겨 담아서 계산 값을 누적하며 되돌이 식을 꾸밀지가 눈에 드러 납니다. 보입니다.
 
     $$

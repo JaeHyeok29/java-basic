@@ -21,7 +21,7 @@
 - method의 (함수, 프로시저의) parameter는 값을 지정하지 않은 local variable
 - paramter passing
   - call-by-value (그 밖에 by-name, by-reference, ...)
-- method call과 actionvation record
+- method call과 activation record
   - [non-recursive](https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/uni10/node18.html)
   - [recursive](https://www.inf.unibz.it/~calvanese/teaching/04-05-ip/lecture-notes/uni10/node19.html)
 
@@ -31,6 +31,6 @@ Java에서 말하는 '변'수는 아마 ... (assignment 때문에 ... 시도 때
 
 [closure]: https://en.wikipedia.org/wiki/Closure_(computer_programming)
 [^closure]: [여러 분야에서 쓰는 말](https://en.wikipedia.org/wiki/Closure)입니다.
-적어도 Regular expression의 [Kleen closure](https://en.wikipedia.org/wiki/Kleene_star) 연산,
+적어도 Regular expression의 [Kleene closure](https://en.wikipedia.org/wiki/Kleene_star) 연산,
 (전산학에서 graph로 표현하는) 수학에서 relation의 [transitive closure](https://en.wikipedia.org/wiki/Transitive_closure) 연산,
 [Clojure](https://clojure.org/) 프로그래밍 언어와 구분합니다.

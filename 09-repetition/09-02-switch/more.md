@@ -1,6 +1,6 @@
 ## 공부 거리
 
-- OpenJDK 17[^jdk]을 깔고, index.md에서 짰던 코드를 switch expression[^switch-expressions] 쓰도록 고칩니다. yield도 써보세요.
+- OpenJDK 17을 깔고, index.md에서 짰던 코드를 switch expression[^switch-expressions] 쓰도록 고칩니다. yield도 써보세요.
 
 <!-- TODO:
     enum + switch 예제와 문제
