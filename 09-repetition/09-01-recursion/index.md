@@ -77,8 +77,8 @@ public class MathxTest {
     }
 
     private static void testFactorial() {
-        TestFactorial.testBaseCase();
-        TestFactorial.testInductiveCase();
+        FactorialTest.testBaseCase();
+        FactorialTest.testInductiveCase();
     }
     // ....
 }
